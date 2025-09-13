@@ -37,7 +37,7 @@ export default function Home() {
     setPassword(result);
 
     // Update history with last 5 passwords
-    setHistory((prev) => [...prev, result].slice(-5));
+    setHistory((prev) => [...prev, result].slice(-15));
   };
 
   return (
