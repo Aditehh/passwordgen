@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 export default function Home() {
-  const [length, setLength] = useState(12);
+  const [length, setLength] = useState(0);
   const [includeUpper, setIncludeUpper] = useState(false);
   const [includeNumbers, setIncludeNumbers] = useState(false);
   const [includeSymbols, setIncludeSymbols] = useState(false);
@@ -21,10 +21,12 @@ export default function Home() {
       return;
     }
 
-    if (chars < 0) {
-      alert("enter valid input");
+    if(setLength < 6) {
+      alert("cannot set small password");
       return;
     }
+
+    
 
     let result = "";
     for (let i = 0; i < length; i++) {
