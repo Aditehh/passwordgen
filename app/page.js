@@ -21,12 +21,12 @@ export default function Home() {
       return;
     }
 
-    if(setLength < 6) {
+    if(length < 6) {
       alert("cannot set small password");
       return;
     }
 
-    
+      
 
     let result = "";
     for (let i = 0; i < length; i++) {
