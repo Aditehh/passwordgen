@@ -26,7 +26,7 @@ export default function Home() {
       return;
     }
 
-      
+
 
     let result = "";
     for (let i = 0; i < length; i++) {
@@ -58,7 +58,7 @@ export default function Home() {
             value={length}
             onChange={(e) => setLength(Number(e.target.value))}
             className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+          /> 
         </div>
 
         {/* Options */}
